@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Golf Tac Toe</title>
+      <script src="vendor.bundle.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+
+    <body class="container-fluid">
+      <div id = "signed-out">
+      <form id="sign-in">
+        <fieldset>
+          <legend>Sign In</legend>
+          <input type="email" name="credentials[email]" id="signin-email" placeholder="Your Email">
+          <input type="password" name="credentials[password]" id="signin-password" placeholder="Set Password">
+          <input type="submit" name="submit" value="Sign In">
+        </fieldset>
+      </form>
+      <br />
+      <form id="sign-up" style="text-align:center;">
+        <fieldset>
+          <legend>Create Account</legend>
+
+          <input type="email" name="credentials[email]"
+          id="signup-email" placeholder="Your Email"><br /><br />
+
+          <input type="password" name="credentials[password]"
+          id="signup-password" placeholder="Set Password"><br /><br />
+
+          <input type="password" name="credentials[password_confirmation]"
+          id="signup-password-confirmation" placeholder="Confirm Password"><br /><br />
+
+          <input type="submit" name="submit" value="Create Account">
+
+        </fieldset>
+      </form>
+      </div>
+
+      <div id = "signed-in">
+      <br />
+      <form id="sign-out">
+        <fieldset>
+          <input type="submit" name="submit" value="Sign Out">
+        </fieldset>
+      </form>
+      <br />
+      <form id="change-password" style="text-align:center;">
+        <fieldset>
+          <legend>Change Password</legend>
+
+
+          <input type="password" name="passwords[old]"
+          placeholder="Old Password"><br /><br />
+
+          <input type="password" name="passwords[new]"
+          placeholder="New Password"><br /><br />
+
+          <input type="submit" name="submit" value="Change Password">
+
+        </fieldset>
+      </form>
+      <form id="view-games">
+        <fieldset>
+          <legend>View Games</legend>
+          <input type="submit" name="submit" value="View Games">
+        </fieldset>
+      </form>
+    </div>
+
+    <!--TicTacToe Table-->
+    <section class="row-eq-height">
+      <article>SQUARE</article>
+      <article>SQUARE  </article>
+      <article>SQUARE</article>
+    </section>
+    <section class="row-eq-height">
+      <article>SQUARE</article>
+      <article>SQUARE</article>
+      <article>SQUARE</article>
+    </section>
+    <section class="row-eq-height">
+      <article>SQUARE</article>
+      <article>SQUARE</article>
+      <article>SQUARE</article>
+    </section>
+    </body>
+</html>

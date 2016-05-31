@@ -1,0 +1,22 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+  padding: 15px;
+}
+
+section {
+  @include make-row();
+  article {
+    @include make-xs-column(4);
+    border: 1px solid #000;
+}
+  }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  }
